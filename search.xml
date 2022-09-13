@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>hexo+github搭建博客</title>
+      <link href="/2022/09/13/hexo-github-da-jian-bo-ke/"/>
+      <url>/2022/09/13/hexo-github-da-jian-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Hexo-GitHub博客搭建"><a href="#Hexo-GitHub博客搭建" class="headerlink" title="Hexo+GitHub博客搭建"></a>Hexo+GitHub博客搭建</h2><h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><p> <a href="https://www.bilibili.com/video/BV1aV411p7Bc/?spm_id_from=333.788&vd_source=729cf6d80ca215d21822e34f9c4fb599">b站博客搭建详细讲解视频</a></p><ol><li>node.js   <a href="https://blog.csdn.net/qq_42006801/article/details/124830995"> Node.js安装与配置（详细步骤）_liyitongxue的博客-CSDN博客_nodejs配置</a></li><li>Git <a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Windows系统Git安装教程（详解Git安装过程） - 学为所用 - 博客园 (cnblogs.com)</a></li><li>编辑软件VScode</li><li>GitHub账号 <a href="https://github.com/">GitHub</a><ul><li>github访问加速：<a href="https://pan.quark.cn/s/4c170f5763d2">https://pan.quark.cn/s/4c170f5763d2</a> 提取码：sFNj</li><li>在github新建一个仓库</li></ul></li></ol><p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/8770/image-20220910114147590.png" alt="image-20220910114147590"></p><p>仓库名设置为<strong>xxx.github.io</strong>, 后面必须是<strong>github.io</strong></p><p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/8770/1.png" alt="1"></p><h3 id="Hexo安装部署"><a href="#Hexo安装部署" class="headerlink" title="Hexo安装部署"></a>Hexo安装部署</h3><ol><li>Hexo安装</li></ol><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install hexo -g<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="2"><li>初始化博客</li></ol><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init [博客文件]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="3"><li>安装依赖</li></ol><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">npm install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="4"><li>预览 （现在可以在本地看看博客模板）</li></ol><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo serve<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>注意：</strong>终端位置需切换到blog目录下</p><img src="http://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/8770/2.png" alt="2"  />]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git学习笔记</title>
+      <link href="/2022/09/13/git-xue-xi-bi-ji/"/>
+      <url>/2022/09/13/git-xue-xi-bi-ji/</url>
+      
+        <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h3 id="一、git-常用命令"><a href="#一、git-常用命令" class="headerlink" title="一、git 常用命令"></a>一、git 常用命令</h3><table><thead><tr><th>git init</th><th>初始化本地库</th></tr></thead><tbody><tr><td>git status</td><td>查看本地库状态</td></tr><tr><td>git add 文件名</td><td>添加到暂存区</td></tr><tr><td>git commit -m “日志信息” 文件名</td><td>提交到本地库</td></tr><tr><td>git reflog</td><td>查看历史记录</td></tr><tr><td>git reset –hard 版本号</td><td>版本穿梭</td></tr></tbody></table><h4 id="git工作流程"><a href="#git工作流程" class="headerlink" title="git工作流程"></a>git工作流程</h4><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/8770/gitprogress.png" alt="gitprogress" style="zoom:150%;" /><h4 id="git版本切换"><a href="#git版本切换" class="headerlink" title="git版本切换"></a>git版本切换</h4><p>Git 切换版本，底层其实是移动的 HEAD 指针，具体原理如下图所示。</p><p><img src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/8770/image-20220911172027906.png" alt="image-20220911172027906"></p><h3 id="二、Git-分支操作"><a href="#二、Git-分支操作" class="headerlink" title="二、Git 分支操作"></a>二、Git 分支操作</h3><h4 id="什么是分支"><a href="#什么是分支" class="headerlink" title="什么是分支"></a>什么是分支</h4><blockquote><p>在版本控制过程中，同时推进多个任务，为每个任务，我们就可以创建每个任务的单独分支。使用分支意味着程序员可以把自己的工作从开发主线上分离开来，开发自己分支的时候，不会影响主线分支的运行。对于初学者而言，分支可以简单理解为副本，一个分支就是一个单独的副本。（分支底层其实也是指针的引用）</p></blockquote><h4 id="分支的操作"><a href="#分支的操作" class="headerlink" title="分支的操作"></a>分支的操作</h4><table><thead><tr><th>git branch 分支名</th><th>创建分支</th></tr></thead><tbody><tr><td>git branch -v</td><td>查看分支</td></tr><tr><td>git checkout  分支名</td><td>切换分支</td></tr><tr><td>git merge 分支名</td><td>把指定的分支合并到当前分支上</td></tr></tbody></table><h4 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h4><ul><li>基本用法：</li></ul><blockquote><p>在 master 分支上合并 hot-fix 分支</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">git merge hot-fix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></blockquote><ul><li>产生冲突</li></ul><blockquote><p>冲突产生的表现：后面状态为 MERGING</p><p>86158@LAPTOP-ILBF6UBU MINGW64 &#x2F;d&#x2F;code-material&#x2F;git-space&#x2F;git-demo <strong>(master|MERGING)</strong></p><p>冲突产生的原因：<br>合并分支时，两个分支在同一个文件的同一个位置有两套完全不同的修改。Git 无法替我们决定使用哪一个。必须人为决定新代码内容。</p></blockquote><ul><li>解决冲突</li></ul><blockquote><p>编辑有冲突的文件，删除特殊符号，决定要使用的内容</p><p>添加到暂存区</p><p>执行提交<strong>（注意：此时使用 git commit 命令时不能带文件名）</strong></p></blockquote>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 系统工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2022/09/11/hello-world/"/>
       <url>/2022/09/11/hello-world/</url>
